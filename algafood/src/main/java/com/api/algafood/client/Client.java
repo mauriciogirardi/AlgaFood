@@ -6,10 +6,19 @@ public class Client {
   private String phone;
   private boolean active = false;
 
-  public Client(String name, String email, String phone) {
+  public Client(String name, String email, String phone, Boolean active) {
     this.email = email;
     this.phone = phone;
     this.name = name;
+    this.active = active;
+  }
+
+  public boolean isActive() {
+    return active;
+  }
+
+  public void setActive(boolean active) {
+    this.active = active;
   }
 
   public String getName() {
@@ -22,9 +31,5 @@ public class Client {
 
   public String getPhone() {
     return phone;
-  }
-
-  public void active() {
-    this.active = true;
   }
 }

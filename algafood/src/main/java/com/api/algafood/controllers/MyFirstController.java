@@ -19,7 +19,7 @@ public class MyFirstController {
   @GetMapping("/hello")
   @ResponseBody
   public String hello() {
-    Client mauricio = new Client("Mauricio", "mauricio@examplo.com", "47996089365");
+    Client mauricio = new Client("Mauricio", "mauricio@examplo.com", "47996089365", false);
     activeClientService.active(mauricio);
 
     return "Olá Mauricio";
